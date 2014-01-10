@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
                            uniqueness: true,
                            format: {
                             with: /\A[a-zA-Z0-9_-]+\z/,
-                            message: 'Must be formatted correctly.'
+                            message: 'must be formatted correctly.'
                            }
   has_many :statuses
 
